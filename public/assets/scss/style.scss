@@ -1,0 +1,220 @@
+$primary-color: #cc9933;
+$white: #fff;
+$black: #000;
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.pt-120 {
+	padding-top: 120px;
+}
+
+.pb-120 {
+	padding-bottom: 120px;
+}
+
+.mt-120 {
+	margin-top: 120px;
+}
+
+.mb-120 {
+	margin-bottom: 120px;
+}
+
+.logo {
+	width: 150px;
+	display: inline-block;
+	img {
+		width: 100%;
+	}
+}
+
+// Header area start here ***
+.header {
+	&-area {
+		background-color: #f2f2f2;
+	}
+	&__wrp {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__menu {
+		.menu {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			li {
+				list-style: none;
+				a {
+					display: inline-block;
+					font-weight: 500;
+					color: #000;
+					transition: 0.3s;
+					text-decoration: none;
+					padding: 30px 10px;
+					text-transform: capitalize;
+					&:hover {
+						color: $primary-color;
+					}
+					&.active {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+// Header area end here ***
+
+// Banner area start here ***
+.banner {
+	&-area {
+		overflow: hidden;
+		margin-top: 30px;
+	}
+	&__image {
+		img {
+			width: 100%;
+		}
+	}
+}
+// Banner area end here ***
+
+// Content area start here ***
+.content {
+	&-area {
+		overflow: hidden;
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+}
+// Content area end here ***
+
+// Product area start here ***
+.product {
+	&__image {
+		img {
+			width: 100%;
+		}
+	}
+	&__item {
+	}
+	&-details {
+		&-area {
+			overflow: hidden;
+		}
+		&__image {
+			img {
+				width: 100%;
+			}
+		}
+		&__slider {
+			margin-bottom: 10px;
+		}
+		&__content {
+			.pdct-price {
+				margin-top: 10px;
+			}
+			ul {
+				li {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					a {
+						color: #5e5e5e;
+						transition: 0.3s;
+						&:hover {
+							color: $primary-color;
+						}
+					}
+					padding: 8px 0;
+					border-bottom: 1px solid #f2f2f2;
+				}
+			}
+		}
+		&__share {
+			a {
+				font-size: 20px;
+				color: $black !important;
+			}
+		}
+		&__process {
+			margin-top: 20px;
+			.product-icrse {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				input {
+					width: 120px;
+					padding: 5px 10px;
+					text-align: center;
+					font-weight: 500;
+					border: 1px solid #d0cdcd;
+				}
+				button {
+					padding: 6px;
+					border: 1px solid #d0cdcd;
+					display: inline-block;
+					width: 40px;
+					font-size: 14px;
+				}
+			}
+			.cart-btn {
+				border: 1px solid #d0cdcd;
+				width: 100%;
+				padding: 5px;
+				font-weight: 500;
+				font-size: 14px;
+				i {
+					font-size: 17px;
+					margin-right: 5px;
+				}
+			}
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+		&__tab {
+			margin-top: 20px;
+			.nav {
+				border-top: 1px solid #f2f2f2;
+				border-bottom: 1px solid #f2f2f2;
+				padding: 10px 0;
+				&.nav-pills {
+					.nav-link {
+						text-transform: uppercase;
+						font-weight: 500;
+						padding: 0;
+						color: $black;
+						margin-right: 20px;
+						&.active {
+							background-color: transparent;
+							color: $primary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Product area end here ***
